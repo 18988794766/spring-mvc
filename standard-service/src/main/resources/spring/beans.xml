@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!-- 通过实现Runnable接口实现自定义线程类 -->
+    <bean name="demoRunnable" class="xy.standard.service.DemoRunnable">
+    </bean>
+    <bean name="demoRunnable1" class="xy.standard.service.DemoRunnable">
+    </bean>
+    <bean name="demoRunnable2" class="xy.standard.service.DemoRunnable">
+    </bean>
+    <bean name="demoRunnable3" class="xy.standard.service.DemoRunnable">
+    </bean>
+    <bean name="computeService" class="xy.standard.service.ComputeService">
+    </bean>
+
+    <!--通过继承Thread类实现自定义线程类-->
+    <bean name="demoThread" class="xy.standard.service.DemoThread">
+    </bean>
+    <bean name="demoThread1" class="xy.standard.service.DemoThread">
+    </bean>
+    <bean name="demoThread2" class="xy.standard.service.DemoThread">
+    </bean>
+    <bean name="demoThread3" class="xy.standard.service.DemoThread">
+    </bean>
+
+    <!-- 通过实现callable接口实现自定义线程类 -->
+    <bean name="demoCall" class="xy.standard.service.DemoCall">
+    </bean>
+    <bean name="demoCall1" class="xy.standard.service.DemoCall">
+    </bean>
+    <bean name="demoCall2" class="xy.standard.service.DemoCall">
+    </bean>
+    <bean name="demoCall3" class="xy.standard.service.DemoCall">
+    </bean>
+</beans>
